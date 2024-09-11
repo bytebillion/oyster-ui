@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @font-face {
+  font-family: "Roboto";
+  src: url("./assets/fonts/Roboto-Regular.ttf");
+} */
+.css-i4bv87-MuiSvgIcon-root,
+.css-vubbuv {
+  height: 0.98rem !important;
+  width: 0.98rem !important;
+}
+.css-i4bv87-MuiSvgIcon-root {
+  fill: #3b82f6 !important;
+}
+a {
+  color: unset!important;
+  text-decoration: unset!important;
+}

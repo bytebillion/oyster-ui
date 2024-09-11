@@ -1,0 +1,125 @@
+.section-four {
+    background-image: url('../../../assets/background-usecase.svg');
+
+}
+
+.use-case-section {
+    padding: 60px 50px;
+}
+
+[class^="use-cases-section-"] {
+
+    display: flex;
+    /* flex: 2; */
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+[class^="use-cases-section-"]:nth-child(2) {
+
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 50px auto !important;
+    width: 80%;
+
+}
+
+.section-heading-four {
+    padding: 50px 0px 30px 0px;
+    color: var(--gray-900, #2A3342);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: -0.72px;
+}
+
+.left-use-case {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.right-use-case {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.useCaseTitles {
+    color: var(--gray-900, #2A3342);
+    text-align: left;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    /* 125% */
+    letter-spacing: -0.96px;
+}
+
+.useCaseDesc {
+
+    text-align: left;
+    color: var(--gray-500, #556987);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+
+}
+
+.useCaseGetButton {
+
+    height: 100%;
+    margin-top: 20px;
+
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: #4285F4;
+    box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+    border-radius: 6px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    display: inline-flex;
+    color: #F0FDF4;
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 24px;
+
+}
+.useCaseGetButton:hover {
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 900px) {
+    [class^="use-cases-section-"] {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    [class^="use-cases-section-"]:nth-child(2) {
+        width: 100%;
+        flex-direction: column; 
+     
+    }
+    .use-case-section {
+        padding: 60px 15px;
+    }
+    
+   
+}

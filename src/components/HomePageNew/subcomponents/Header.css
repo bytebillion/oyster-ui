@@ -1,0 +1,180 @@
+/* Header.css */
+
+.main-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  min-width: 100%;
+  background-color: white;
+  padding: 25px 85px;
+  background-image: url('../../../assets/Frame\ 16.svg');
+  color: rgb(25, 25, 25);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.mobile-menu-buttons{
+  display: none;
+}
+
+.header-container {
+  display: flex;
+}
+.menu-bar{
+  display: flex;
+  GAP: 45PX;
+}
+.desktop-menu-buttons{
+  display: flex;
+    gap: 25px;
+}
+.menu-items {
+  display: inline-flex;
+  justify-content: center;
+  flex: 2;
+  align-items: center;
+  text-align: center;
+  gap: 48px;
+}
+
+.logo {
+  flex: 1; 
+}
+.logo-header{
+  cursor: pointer;
+}
+.menu-item {
+  list-style-type: none;
+  color: var(--gray-500, #556987);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+
+.menu-item.active {
+  font-weight: bold; /* Font weight for active menu item */
+}
+
+.login {
+  color: var(--gray-500, #556987);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+
+.buttons-header {
+  display: flex;
+  gap: 20px;
+}
+
+.start {
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #3B82F6;
+  box-shadow: 0px 1px 2px 0px rgba(105, 81, 255, 0.05);
+  color: var(--primary-050, #F0FDF4);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 900px) {
+  .main-header {
+    padding: 25px 15px;
+    flex-direction: column;
+  }
+
+  .header-container {
+    justify-content: space-between;
+  }
+
+  .menu-items {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .menu-items.mobile-menu {
+    display: flex;
+  }
+
+  .menu-item {
+    margin-bottom: 15px;
+  }
+
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+  }
+
+  .hamburger-menu .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .hamburger-menu.cross .bar {
+    display: none; /* Hide the bars when the menu is in cross mode */
+  }
+
+  .main-header.mobile-menu-open .menu-items {
+    display: flex;
+  }
+  .mobile-menu-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+  .back-button {
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+  }
+  .desktop-menu-buttons{
+    display: none;
+  }
+  .menu-bar{
+    flex-direction: column;
+  }
+}
+
+
+.menu-item {
+  cursor: pointer;
+  position: relative;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200%;
+  background-color: white;
+  color: black;
+  display: none;
+  padding: 20px 10px;
+  border-radius: 2px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.menu-item:hover .submenu {
+  display: flex; 
+  flex-direction: column;
+}

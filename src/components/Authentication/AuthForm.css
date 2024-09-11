@@ -1,0 +1,354 @@
+.login_screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  cursor: default;
+  overflow: hidden;
+}
+.login_screen {
+  position: relative;
+  height: 100%;
+  margin: 0;
+}
+
+.login_screen:after {
+  position: absolute;
+  content: "";
+  top: 0px;
+  height: 100%;
+  width: 33%;
+  right: 0px;
+  background: #B1CEFB;
+}
+
+.login_logo_wrapper {
+  position: absolute;
+  top: 10px;
+  cursor: pointer;
+}
+
+.logo_icon img {
+  max-width: 80%;
+}
+
+.login_form h1 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 39px;
+  letter-spacing: 0.04em;
+  color: #31334e;
+  margin-bottom: 20px;
+}
+
+.login_sub_heading {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.04em;
+  color: #3b82f6;
+  margin-bottom: 40px;
+}
+
+.number_input {
+  padding: 10px;
+  border: 1px solid #B1CEFB;
+  border-radius: 4px;
+  width: 80%;
+  outline: none;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.login_btn button {
+  border: none;
+  background: #B1CEFB;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 29px;
+  text-align: center;
+  color: #ffffff;
+  width: 80%;
+  padding: 8px;
+  margin-bottom: 30px;
+}
+
+.login_btn button:disabled {
+  border: none;
+  background: #B1CEFB;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 29px;
+  text-align: center;
+  color: #ffffff;
+  width: 80%;
+  padding: 8px;
+  margin-bottom: 30px;
+}
+.login_btn button:active {
+  transform: scale(0.99);
+}
+.verify button:active {
+  transform: scale(0.99);
+}
+.active_loginbtn button {
+  border: none;
+  background: #3b82f6;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 29px;
+  text-align: center;
+  color: #ffffff;
+  width: 80%;
+  padding: 8px;
+  margin-bottom: 30px;
+}
+.verify button {
+  border: none;
+  background: #B1CEFB;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 29px;
+  text-align: center;
+  color: #ffffff;
+  width: 80%;
+  padding: 8px;
+  margin-bottom: 30px;
+}
+.active_verify_btn button {
+  border: none;
+  background: #3b82f6;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 29px;
+  text-align: center;
+  color: #ffffff;
+  width: 80%;
+  padding: 8px;
+  margin-bottom: 30px;
+}
+
+.number_input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #6e6e70;
+}
+
+.divider {
+  overflow: hidden;
+  position: relative;
+}
+
+.divider h1 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #3b82f6;
+}
+
+.divider h1:before,
+.divider h1:after {
+  background-color: #e6ebed;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  vertical-align: middle;
+  width: 30%;
+  position: relative;
+}
+
+.divider h1:before {
+  right: 20px;
+  margin-left: 8%;
+}
+
+.divider h1:after {
+  left: 20px;
+}
+
+.google_btn {
+  background: #ffffff;
+  border: 1px solid #B1CEFB;
+  border-radius: 5px;
+  width: 80%;
+  text-align: center;
+  padding: 8px;
+  font-size: 16px;
+  color: #232526;
+  margin-top: 30px;
+}
+
+.google_btn img {
+  width: 20px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.login_banner {
+  z-index: -1;
+  position: absolute;
+  right: -18%;
+  bottom: 0;
+}
+
+.login_banner img {
+  max-width: 70%;
+}
+
+.banner_top p {
+  position: absolute;
+  top: 15%;
+  right: 12%;
+  z-index: 5;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 48px;
+  letter-spacing: -0.015em;
+  color: #3e3f58;
+  max-width: 450px;
+}
+.divine {
+  color: #fff;
+}
+/* OTP FORM CSS*/
+.verify_otp {
+  width: 48px;
+  width: 100%;
+  margin-right: 10px;
+  padding-left: 12px;
+  height: 40px;
+  background: transparent;
+  border-radius: 2px;
+  border: none;
+  border-bottom: 2px solid #B1CEFB;
+}
+
+.verify_otp:focus {
+  outline: none;
+}
+
+.otp_login_sub_heading {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 27px;
+  letter-spacing: 0.04em;
+  color: #3b82f6;
+  margin-bottom: 20px;
+}
+
+.otp_box {
+  margin-bottom: 20px;
+}
+
+.change_num {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1vw;
+  letter-spacing: 0.04em;
+  color: #3b82f6;
+  margin-bottom: 0;
+}
+.login-otp-email {
+  margin-bottom: 0;
+  color: #020303;
+  font-size: 1.1vw;
+  font-weight: 500;
+
+  min-width: 100%;
+  word-break: break-all;
+}
+.login-otp-timer {
+  display: flex;
+  color: #7d818b;
+  font-size: 1vw;
+  margin: 0;
+  margin-right: 5px;
+  font-weight: 500;
+}
+
+.login-otp-resend {
+  color: #3b82f6;
+  font-size: 1vw;
+  margin: 0 1vw;
+  font-weight: 500;
+}
+.login-otp-resend-disabled {
+  color: #7d818b;
+  font-size: 11px;
+  margin: 0 1vw;
+  font-weight: 500;
+}
+/* Personal details CSS */
+
+.login_desc {
+  color: #c1c1c1;
+  font-size: 1.3vw;
+  margin: 1vw 0;
+  font-weight: 500;
+}
+.user_dob_picker {
+  border: none !important;
+  outline: none !important;
+  width: 80%;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+.react-date-picker__wrapper {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #B1CEFB !important;
+}
+
+.personal_page_label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #464646;
+}
+
+.footerM{
+  margin: auto;
+}
+
+
+@media screen and (max-width: 1324px) {
+
+  .login-otp-email {
+    font-size: 15px;
+  }
+
+  .change_num {
+    font-size: 13px;
+}
+
+.login-otp-timer {
+  font-size: 16px;
+}
+
+.login-otp-resend {
+  margin-top: 2px;
+  font-size: 14px;
+}
+
+.verify_otp {
+  padding-left: 0px;
+}
+
+.divine {
+  color: #3e3f58;
+}
+
+.login_screen:after {
+
+  width: 15%;
+
+}
+
+.banner_top p {
+  display: none;
+}
+  
+
+
+}

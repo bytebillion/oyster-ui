@@ -1,0 +1,8 @@
+export const accordionData = [
+  { title: "What is Oyster?", content: "Oyster is a web-based tool designed to assist users in improving their writing, which includes checking for grammar, spelling, punctuation, and style errors and offering suggestions for improvement." },
+  { title: "Can I use Oyster for academic/professional writing?", content: "Yes, Oyster is suitable for academic and professional writing, as it can help identify and correct grammar and style issues. This helps users adapt their writing to different contexts and audiences." },
+  { title: "What types of documents can I check with Oyster?", content: "Oyster can check a wide range of document types, including emails, social media copies, essays, reports, PR articles, and more." },
+  { title: "Is Oyster easy to use for non-technical users?", content: "Oyster is designed to be user-friendly and offers extensive documentation, training, and product support to help users, even those without technical backgrounds." },
+  { title: "Can Oyster help with Copywriting and Social Media", content: "Yes, Oyster includes social media management support for LinkedIn, Twitter, Facebook and Instagram. Oyster can help with content ideas, outline, writing and optimisation for social media engagement and performance." },
+  { title: "Are there educational discounts available for students/teachers", content: "Oyster offers various discounts keeping in mind the unique requirement of all the users. Please check the homepage for specific pricing and discounts." },
+];

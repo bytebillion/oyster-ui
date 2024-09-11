@@ -1,0 +1,399 @@
+.main-dash {
+  display: flex;
+  background-color: #ececec;
+}
+
+/* Mobile Logo */
+.leftpane-mobile-logo {
+  display: none;
+}
+
+/* Dashboard Card */
+.dash-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 210px;
+  height: 250px;
+  background: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.new-doc-text {
+  color: #090909;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: -0.24px;
+  text-transform: capitalize;
+}
+
+.upload-file-img {
+  width: 24%;
+  padding: 30px 0px;
+}
+
+.upload {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #090909;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 13px;
+  letter-spacing: -0.24px;
+  text-transform: capitalize;
+}
+
+/* Left Pane Content */
+.leftpane-content {
+  color: #a6a6a6;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.leftpane-content-support {
+  color: #a6a6a6;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.leftpane-content-email {
+  color: white;
+  font-family: Poppins;
+  font-size: 9px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+/* Left Pane Menu */
+.leftpane-menu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.leftpane-menu-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.error-delete {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Document Content Container */
+.doc-content-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Left Pane Styling */
+.leftpane-dash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 105px;
+  padding: 72px 25px;
+  width: 165px;
+  height: 100vh;
+  background-color: #252e3b;
+}
+
+/* Right Pane Styling */
+.rightpane-dash {
+  height: 100vh;
+  flex: 1 1;
+  background-color: #ececec;
+  padding: 85px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  overflow-y: auto;
+  margin-left: 12%;
+}
+
+/* Dashboard Card Content */
+.dash-card-content {
+  width: 210px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 60px;
+  color: #040404;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 13px;
+  letter-spacing: -0.24px;
+  text-transform: capitalize;
+}
+
+.doc-title {
+  color: #040404;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -0.24px;
+  text-transform: capitalize;
+  padding: 20px 20px 5px 20px;
+}
+
+.doc-text {
+  padding: 0px 20px;
+  color: #232536;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: capitalize;
+}
+
+.suggestion {
+  padding: 0px 20px 10px 20px;
+  color: #3a3af4;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 13px;
+  display: flex;
+  letter-spacing: -0.4px;
+  text-transform: capitalize;
+}
+
+/* Menu Divider Styling */
+.menu-divider {
+  color: #6e6e6e;
+  width: 135px;
+  border-bottom: 1px solid white;
+}
+
+/* Support Menu Container Styling */
+.support-menu-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+}
+
+/* Support Dash Styling */
+.dash-sup {
+  margin: 12px auto;
+}
+
+/* Active Content Styling */
+.leftpane-content.active {
+  color: white !important;
+}
+
+/* Support Menu Box Styling */
+.support-menu-box {
+  padding-bottom: 8px;
+}
+
+/* Media Queries */
+
+/* Medium Screens */
+@media (min-width: 800px) {
+  .support-menu-cont {
+    margin-top: auto;
+  }
+}
+
+/* Large Screens */
+@media only screen and (max-width: 1412px) and (min-width: 1100px) {
+  .rightpane-dash {
+    padding: 85px 22px;
+    gap: 25px;
+  }
+
+  .dash-card-content,
+  .dash-card,
+  .line-doc {
+    width: 195px;
+  }
+
+  .doc-text {
+    font-size: 16px;
+  }
+}
+
+/* Medium Screens */
+@media only screen and (max-width: 1200px) and (min-width: 1051px) {
+  .rightpane-dash {
+    padding: 85px 30px;
+    gap: 30px;
+  }
+
+  .delete-account {
+    padding: 25px 0px;
+  }
+
+  .leftpane-content-email {
+    font-size: 10px;
+  }
+}
+
+/* Small Screens */
+@media only screen and (max-width: 1000px) and (min-width: 581px) {
+  .delete-account {
+    padding: 25px 0px;
+  }
+
+  .delete-content {
+    line-height: 20px;
+    text-align: justify;
+  }
+
+  .leftpane-dash {
+    padding: 50px 10px;
+    width: 135px;
+  }
+
+  .leftpane-content-email {
+    font-size: 12px;
+  }
+
+  .line-doc {
+    color: #6e6e6e;
+    width: 200px;
+  }
+
+  .menu-divider {
+    width: 120px;
+  }
+
+  .rightpane-dash {
+    padding: 85px 16px;
+    gap: 29px 20px;
+  }
+
+  .leftpane-logo {
+    width: 100%;
+  }
+
+  .menu-divider {
+    width: 100px;
+  }
+
+  .leftpane-content-email,
+  .leftpane-content {
+    font-size: 9px;
+  }
+
+  .dash-card-content {
+    margin-bottom: 0px;
+    width: 200px;
+  }
+
+  .dash-card {
+    width: 200px;
+  }
+
+  .leftpane-content-support {
+    font-size: 12px;
+  }
+}
+
+/* Extra Small Screens */
+@media only screen and (max-width: 580px) and (min-width: 220px) {
+  .rightpane-dash {
+    gap: 20px;
+    margin-left: 14%;
+    padding: 86px 14px;
+    justify-content: center;
+  }
+
+  .line-doc {
+    color: #6e6e6e;
+    width: 200px;
+  }
+
+  .leftpane-logo {
+    width: 100%;
+  }
+
+  .menu-divider {
+    width: 70px;
+  }
+
+  .leftpane-dash {
+    padding: 50px 10px;
+    width: 82px;
+  }
+
+  .leftpane-content-email,
+  .leftpane-content {
+    font-size: 9px;
+  }
+
+  .leftpane-content,
+  .leftpane-content-email {
+    display: none;
+  }
+
+  .leftpane-content-support {
+    padding: 0px !important;
+    font-size: 14px;
+  }
+
+  .leftpane-logo {
+    display: none;
+  }
+
+  .dash-card-content {
+    width: 200px;
+    margin-bottom: 0px;
+  }
+
+  .dash-card {
+    width: 200px;
+  }
+
+  .doc-text {
+    font-size: 15px;
+  }
+
+  .doc-title {
+    font-size: 18px;
+  }
+
+  .leftpane-mobile-logo {
+    display: unset;
+  }
+
+  .leftpane-menu-cont {
+    align-items: center;
+  }
+}
+
+/* Smallest Screens */
+@media only screen and (max-width: 330px) and (min-width: 220px) {
+  .rightpane-dash {
+    margin-left: 24%;
+  }
+}

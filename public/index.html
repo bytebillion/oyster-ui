@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" id="favicon" href="%PUBLIC_URL%/logo.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.ico" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/less/dist/less.min.js"></script>
+  <title>Oyster: Your Intelligent Writing Companion</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script>
+    const usesDarkMode =
+      window.matchMedia("(prefers-color-scheme: dark)").matches || false;
+    const favicon = document.getElementById("favicon");
+
+    function switchIcon(usesDarkMode) {
+      if (usesDarkMode) {
+        favicon.href = "%PUBLIC_URL%/logo_dark.ico";
+      } else {
+        favicon.href = "%PUBLIC_URL%/logo.ico";
+      }
+    }
+
+    window
+      .matchMedia("(prefers-color-scheme: dark)")
+      .addEventListener("change", (e) => switchIcon(e.matches));
+    switchIcon(usesDarkMode);
+  </script>
+</body>
+
+</html>

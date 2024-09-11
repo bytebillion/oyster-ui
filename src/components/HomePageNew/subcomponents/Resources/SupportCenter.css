@@ -1,0 +1,97 @@
+.supportCenter-container {
+    padding-top: 95px;
+}
+
+
+
+.supportCenter-text {
+    padding: 140px 150px;
+    background-color: #252E3B;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    text-transform: capitalize;
+
+
+}
+
+.supportCard {
+    border-radius: 3px;
+    background: #FFF;
+    box-shadow: 0px 30px 60px 0px rgba(58, 58, 244, 0.10);
+    width: 50%;
+    margin: 40px auto;
+    padding: 35px;
+}
+
+.css-1c2zydz-MuiPaper-root-MuiAccordion-root:before {
+    background-color: none !important;
+    position: INHERIT !important;
+}
+
+.css-1le28he-MuiInputBase-root {
+    background: white;
+    border-radius: 0px !important;
+    padding: 6px 16px;
+}
+
+.search-bar {
+    display: flex;
+    margin-top: 20px;
+}
+
+.css-78trlr-MuiButtonBase-root-MuiIconButton-root {
+    padding-left: 20px;
+    border-radius:0px !important;
+    background-color: blue;
+    color: white;
+    padding: 6px 20px !important;
+}
+
+.css-78trlr-MuiButtonBase-root-MuiIconButton-root {
+
+    border-radius: 0px !important;
+    background-color: blue !important;
+    color: white !important;
+}
+
+.support-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.sup-title {
+    color: #060619;
+    font-family: Source Sans Pro;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.css-10wpov9-MuiTypography-root {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+
+
+@media only screen and (max-width: 940px) and (min-width: 501px){
+    .supportCard {
+        width: 75%;
+    }
+    .supportCenter-text {
+        padding: 130px 100px;
+    }
+}
+@media only screen and (max-width: 500px) and (min-width: 270px){
+    .supportCard {
+        width: 94%;
+    }
+    .supportCenter-text {
+        padding: 130px 45px;
+    }
+}

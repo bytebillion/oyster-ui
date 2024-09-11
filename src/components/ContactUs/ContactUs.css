@@ -1,0 +1,147 @@
+.flexBox {
+  display: flex;
+}
+.box {
+  width: 44%;
+  margin: auto;
+}
+.main-div {
+  flex-direction: row;
+  vertical-align: middle;
+}
+
+.heading {
+  color: #5d5a88;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 50px;
+}
+
+.para {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.icon-svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+.contact-img {
+  height: fit-content;
+}
+.icon-text {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 5px;
+  color: rgb(136, 140, 216);
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: -5px;
+}
+.second {
+  display: none;
+}
+
+.first {
+  height: auto;
+  padding-right: 100px;
+}
+.third {
+  background-color: #f2f1fa;
+  border-radius: 25px;
+  padding: 40px;
+  /* margin-bottom: 105px; */
+}
+.input-container {
+  gap: 20px;
+}
+.form-label {
+  color: rgb(93, 90, 136);
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+}
+.input {
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+  margin: 16px 0px 16px -10px;
+  padding: 16px;
+  color: rgb(173, 171, 195);
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 18px;
+}
+.input-message {
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  margin: 16px 0px 16px -10px;
+  padding: 20px;
+  color: rgb(173, 171, 195);
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 18px;
+}
+.button {
+  background-color: #3b82f6;
+  color: rgb(248, 248, 248);
+  border-radius: 40px;
+  padding: 12px 36px;
+  margin: 16px 0px 16px -10px;
+}
+
+@media screen and (max-width: 1100px) {
+  .contactus-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .first {
+    padding-right: unset;
+  }
+  .second {
+    display: unset;
+  }
+
+  .container-fluid {
+    height: unset;
+  }
+  .fourth {
+    display: none;
+  }
+  .flexBox {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 100%;
+    margin: auto;
+  }
+
+  .paragraph-box {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .main-div {
+    flex-direction: column;
+  }
+  .heading {
+    text-align: center;
+  }
+  .para {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .icon-line {
+    /* text-align: center; */
+    padding-top: 30px;
+  }
+}

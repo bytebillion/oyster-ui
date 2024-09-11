@@ -1,0 +1,189 @@
+.footer_container {
+  background-color: #f3f3fb;
+  height: auto;
+  border-top: 1px solid #000;
+}
+
+.footer_logo {
+  margin-top: 60px;
+  margin-left: 70px;
+  width: 180px;
+}
+
+.footer_logo img {
+  width: 100%;
+}
+
+.footer_left h3 {
+  font-weight: 500;
+  font-size: 33px;
+  letter-spacing: -0.015em;
+  color: #5D5A88;
+  max-width: 55%;
+  margin-bottom: 2rem;
+  margin: 4rem auto 2rem auto;
+  /* margin-top: 4rem; */
+  cursor: default;
+}
+
+.footer_left h2 {
+  font-size: 21px;
+  letter-spacing: -0.015em;
+  color: #9795B5;
+  max-width: 55%;
+  line-height: 38px;
+  margin: auto;
+  cursor: default;
+  margin-bottom: 4rem;
+}
+
+.nav_options {
+  display: flex;
+  margin-left: 76px;
+}
+
+.nav_options p {
+  margin-right: 2vw;
+  font-weight: 500;
+  color: #000000;
+  cursor: pointer;
+  margin-bottom: 0;
+  display: inline-block;
+  position: relative;
+}
+
+.nav_options p:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #3b82f6;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav_options p:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.social_icons svg {
+  margin-right: 1.5vw;
+  margin-top: 2vw;
+  width: 2em;
+}
+
+
+
+.footer_right h2 {
+  font-weight: 500;
+  font-size: 1.3vw;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #464646;
+  max-width: 80%;
+  margin: auto;
+  cursor: default;
+}
+
+.footer_right span {
+  color: #8fbbfd;
+}
+
+.footer_right span {
+  color: #8fbbfd;
+}
+
+.footer_right button {
+  background: #3b82f6;
+  padding: 13px;
+  width: 90%;
+  min-width: 74%;
+  border-radius: 24px;
+  color: #FFE;
+  font-weight: 500;
+}
+
+.foterInput {
+  padding: 13px;
+  border-radius: 24px;
+  width: 100%;
+}
+
+
+.copyrightPB {
+  margin-top: 18px;
+  margin-bottom: 1rem;
+  color: #3b82f6;
+  display: none;
+  /* margin-left: -57px; */
+}
+
+.signUpDiv {
+  width: 50%;
+}
+
+.footer_right {
+  color: #3b82f6;
+  margin: auto;
+  text-align: center;
+  display: flex;
+}
+
+.footer_input {
+  padding: 13px;
+  border: 1px solid #3b82f6;
+  border-radius: 24px;
+  width: 100%;
+  outline: none;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+
+  .footer_left h3 {
+    max-width: 80%;
+    text-align: center;
+  }
+
+  .footer_left h2 {
+    max-width: 80%;
+    text-align: center;
+  }
+
+  .footer_right {
+    display: block;
+  }
+
+  .foterInput {
+    width: 76%;
+  }
+
+  .signUpDiv {
+    width: 100%;
+    /* margin-top: 2rem; */
+  }
+
+  .copyrightPB {
+    display: list-item;
+    /* margin-left: -57px; */
+  }
+
+  .footer_container {
+    padding-bottom: 50px;
+  }
+
+  .footer_right button {
+    width: 100%;
+  }
+
+  .copyrightT{
+    display: none;
+  }
+  
+
+}

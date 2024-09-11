@@ -1,0 +1,154 @@
+
+[class^="feature-section-"] {
+
+  display: flex;
+  /* flex: 2; */
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+
+}
+
+[class^="feature-section-"]:nth-child(2) {
+
+  display: flex;
+  flex-direction: row-reverse;
+  width: 77%;
+
+
+}
+[class^="feature-section-"]:nth-child(2) {
+
+  display: flex;
+  flex-direction: row-reverse;
+  margin: auto;
+  width: 80%;
+
+}
+.cont-five{
+  width: 80%;
+  padding: 55px;
+  margin: auto;
+}
+.section-heading-five{
+  color: var(--gray-900, #2A3342);
+text-align: center;
+font-family: Poppins;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 44px; 
+letter-spacing: -0.72px;
+}
+.section-des-five{
+  color: var(--gray-500, #556987);
+text-align: center;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 30px; 
+}
+.left-use-case {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.right-usecase-content{
+  width: 77%;
+  text-align: left;
+}
+
+.useCaseTitles {
+  color: var(--gray-900, #2A3342);
+ 
+  font-family: Poppins;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 125% */
+  letter-spacing: -0.96px;
+}
+
+.useCaseDesc {
+
+  text-align: left;
+  color: var(--gray-500, #556987);
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  
+}
+
+.useCaseGetButton {
+
+  height: 100%;
+  margin-top: 20px;
+
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background: #4285F4;
+  box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+  border-radius: 6px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  display: inline-flex;
+  color: #F0FDF4;
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+@media only screen and (max-width: 900px) {
+.cont-five {
+  width: 100%;
+}
+.right-use-case {
+  width: 100%;
+  padding: 20px;
+  
+}
+[class^="feature-section-"] {
+
+  display: flex;
+flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+
+}
+.right-use-case{
+  align-items: center;
+}
+.useCaseTitles{
+  text-align: center;
+}
+.useCaseDesc {
+  text-align: center;
+}
+[class^="feature-section-"]:nth-child(2) {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-buttons {
+  display: inline !important;
+}
+.right-usecase-content{
+  width:100%;
+  text-align: center;
+}
+}
+
+.testimonial-buttons{
+  display: flex;
+}

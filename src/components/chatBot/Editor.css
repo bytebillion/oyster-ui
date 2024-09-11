@@ -1,0 +1,66 @@
+.send-message-area{
+    width:100%
+}
+.send-text-area{
+    padding-top: 12px;
+    border:1px solid rgb(239, 239, 239);
+    border-radius: 20px 20px 0px 0px;
+}
+
+.editor-container{
+width: 100%;
+}
+
+.browse-prompts{
+    background-color: #f9fafb;
+    width: 91%;
+    padding: 12px;
+border:1px solid rgb(239, 239, 239);
+border-radius: 0px 0px 20px 20px;
+}
+.prompt-btn {
+    transition: background-color 0.3s ease;
+    padding: 6px 10px;
+    background-color: whitesmoke;
+    border-radius: 12px;
+  }
+  
+  .prompt-btn:hover {
+    background-color: #4285F4;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 12px;
+  }
+  .empty-head{
+    padding-top: 30px;
+    color:  #4285F4;
+  }
+  .empty-para{
+    font-size: 18px;
+    line-height: 1.25rem;
+  }
+  .list-container{
+    display: flex;
+    width: 100%;
+    gap: 30PX;
+  }
+  .empty-img {
+    background-color: #eaeaea;
+    padding: 8px;
+    border-radius: 60px;
+    width: 60px;
+    height:60px;
+}
+  .empty-sub-head{
+    font-size: 20px;
+  }
+  .lists-container{
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .empty-main-cont{
+    margin: 50px ;
+
+  }

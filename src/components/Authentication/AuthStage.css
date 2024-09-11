@@ -1,0 +1,108 @@
+.login_banner {
+  z-index: 1;
+}
+.mob-heading {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 48px;
+  letter-spacing: -0.015em;
+  color: #3e3f58;
+  max-width: 450px;
+}
+@media only screen and (max-width: 1120px) and (min-width: 901px) {
+  .banner_top p {
+    display: unset;
+  }
+  .mob-heading {
+    display: none;
+  }
+
+  .login_banner {
+    right: -36%;
+    z-index: 1;
+  }
+  .login_screen:after {
+    width: 40%;
+  }
+  .banner_top p {
+    right: 1%;
+  }
+  .divine {
+    color: #ffffff;
+  }
+}
+@media screen and (max-width: 900px) {
+  .login_banner img {
+    max-width: 40%;
+  }
+  .banner_top p {
+    display: none;
+  }
+  .login_screen:after {
+    display: none;
+  }
+  .login_banner {
+    z-index: -1;
+    padding-left: 40px;
+  }
+  .divine {
+    color: #c4c7fb;
+  }
+}
+@media screen and (max-width: 770px) {
+  .login_screen:after {
+    display: none;
+  }
+  .banner_top p {
+    display: none;
+  }
+  .banner_top p {
+    font-weight: 700;
+  }
+  .col-contain {
+    padding-left: 40px;
+  }
+  .divine {
+    color: #c4c7fb;
+  }
+}
+@media screen and (max-width: 550px) {
+  .login_screen:after {
+    background: unset;
+  }
+  .banner_top p {
+    display: none;
+  }
+  .col-contain {
+    padding-left: 40px;
+  }
+  .divine {
+    color: #c4c7fb;
+  }
+}
+@media only screen and (max-width: 1500px) and (min-width: 1121px) {
+  login_banner {
+    right: 9%;
+    z-index: 1;
+  }
+  .banner_top p {
+    right: 9%;
+  }
+  .login_screen:after {
+    width: 36%;
+  }
+  .mob-heading {
+    display: none;
+  }
+  .banner_top p {
+    display: unset;
+  }
+  .divine {
+    color: #ffffff;
+  }
+}
+@media only screen and (min-width: 1501px)  {
+.mob-heading {
+    display :none
+}
+}

@@ -1,0 +1,110 @@
+.personall_details_form {
+  width: 400px;
+  padding: 20px;
+}
+.personall_details_form h1 {
+  font-weight: 600;
+  font-size: 30px;
+  color: #31334e;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.verification_form h1 {
+  font-weight: 600;
+  font-size: 30px;
+  color: #31334e;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.verfication_sub_text {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #a9adc9;
+  margin-bottom: 30px;
+}
+.personal_details_input input {
+  border: 1px solid #a9adc9;
+  border-radius: 5px;
+  padding: 6px 10px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+.personal_details_input input::placeholder {
+  font-size: 14px;
+}
+.phone_input_box {
+  position: relative;
+  margin-bottom: 40px;
+}
+.createappointment_input_phone {
+  padding: 7px 10px;
+  border: 1px solid #a9adc9;
+  border-radius: 5px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 17px;
+  letter-spacing: 0.02em;
+  color: #232526;
+  position: relative;
+  text-indent: 35px;
+}
+.createappointment_input_phone::placeholder {
+  font-size: 14px;
+}
+.country_code {
+  line-height: 25px;
+  padding: 2px;
+  margin-left: 10px;
+  color: 000;
+  display: block;
+  position: absolute;
+  top: 15%;
+  color: #6e6e70 !important;
+}
+.personall_details_form button {
+  background: #3b82f6;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 6px;
+  width: 100%;
+  margin-top: 20px;
+}
+.otp_box {
+  height: 70px;
+}
+
+.login_otp_field {
+  width: 38px;
+  margin-right: 10px;
+  padding-left: 12px;
+  height: 40px;
+  background: none;
+  border-radius: 2px;
+  border: none;
+  border-bottom: 1.24015px solid #b7b7b7;
+}
+
+.phone_number {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #232526;
+}
+.phone_number span {
+  display: flex;
+  margin-top: 0;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  color: #7d818b;
+  margin: 0 5px;
+}
+.phone_number svg {
+  margin-right: 3px;
+  /* margin-top: 5px; */
+}

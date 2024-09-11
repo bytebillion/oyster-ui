@@ -1,0 +1,111 @@
+.login-container {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.login-box {
+  width: 70%;
+  padding: 50px;
+  border-radius: 13px;
+  background: #F3F3F3;
+  box-shadow: 0px 43px 28px 0px rgba(0, 0, 0, 0.25);
+  margin: 20px auto;
+
+}
+
+.login-form-head {
+  text-align: left;
+  color: #110F14;
+  font-family: Poppins;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 65.5px;
+  /* 109.167% */
+  letter-spacing: -1.2px;
+}
+
+.highlight {
+  color: #4285F4;
+}
+
+.login-form-head-2 {
+  color: #8896AB;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  padding: 20px 0;
+
+}
+
+.login-form-head-3 {
+
+  color: #4285F4;
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  padding: 55px 0;
+}
+
+.login-buttons-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.button-login {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: auto;
+  border-radius: 6px;
+  border: 1px solid #A0A3BD;
+  box-shadow: 0px 1px 2px 0px rgba(105, 81, 255, 0.05);
+  background-color: #fff;
+  color: #4285F4;
+
+}
+
+button.active {
+  padding: 10px 20px;
+  background-color: #3B82F6;
+  color: white;
+  border: 0px;
+  border-radius: 6px;
+}
+
+
+.login-buttons-container-2 {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: flex-end;
+}
+
+.button-later-form {
+  border-radius: 6px;
+  padding: 8px 22px;
+  border: 1px solid var(--gray-200, #D5DAE1);
+  background: var(--white-900, #FFF);
+  box-shadow: 0px 1px 2px 0px rgba(105, 81, 255, 0.05);
+  width: auto;
+  color: #333F51;
+
+
+}
+
+.button-next-form {
+  border-radius: 6px;
+  padding: 8px 32px;
+  color: white;
+  background: #3B82F6;
+  box-shadow: 0px 1px 2px 0px rgba(105, 81, 255, 0.05);
+  width: auto;
+
+}

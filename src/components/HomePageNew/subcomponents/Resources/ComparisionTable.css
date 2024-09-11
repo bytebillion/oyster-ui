@@ -1,0 +1,113 @@
+.table-container {
+    padding-top: 95px;
+    height: 100%;
+    text-align: center;
+    overflow-x: auto;
+}
+
+.comparison-table {
+    margin: 0px auto 70px auto;
+        width: 60% !important;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 1.969px 6.475px 0px rgba(0, 0, 0, 0.02), 0px 9px 18.2px 0px rgba(0, 0, 0, 0.03), 0px 22.781px 48.825px 0px rgba(0, 0, 0, 0.04), 0px 45px 112px 0px rgba(0, 0, 0, 0.06);
+}
+
+.loading-message {
+    font-size: 18px;
+    color: #888;
+    margin-top: 20px;
+}
+
+.Table-main {
+    padding-top: 40px;
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    /* 75% */
+}
+
+.Table-sub {
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 40px;
+    width: 35%;
+    margin: auto;
+    color: #000;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.table-head {
+    padding-top: 42px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    /* 50% */
+}
+
+.back-button-cont {
+    padding: 35px;
+    text-align: left;
+    background-image: url('../../../../assets/Frame\ 16.svg');
+
+}
+
+.cont-table {
+    padding: 55px;
+
+}
+
+th,
+td {
+    padding: 38px !important;
+}
+
+th {
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #dddddd;
+}
+
+
+.comparison-table {
+
+    @media (max-width: 768px) {
+        overflow: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .innerHome-container-bg {
+        margin: 0 auto;
+        padding: 15px;
+    }
+    .Table-main {
+        font-size: 38px;
+        
+    }
+    .Table-sub {
+        padding-top: 0px;
+        width: 100%;
+        font-size: 22px;
+        line-height: 34px;
+    }
+    .table-head {
+        padding-top: 0px;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 46px;
+    }
+    .comparison-table {
+        width: 85% !important;
+    }
+}

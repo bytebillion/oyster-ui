@@ -1,0 +1,77 @@
+
+.mobile-editProfile-container {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height : 100%;
+  }
+  .user_profile_pic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1vw;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: #D8E6FD;
+    cursor: default;
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .mobile-padding{
+    padding-left: 20px;
+
+  }
+  .container-1 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .container-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+  
+  .edit-profile-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    margin: 0 auto;
+  }
+  
+  .edit-profile-form input,
+  .edit-profile-form select {
+    margin-bottom: 20px;
+    padding: 22px;
+    border-radius: 20px;
+    background-color:#D8E6FD ;
+    
+  }
+  
+  .edit-profile-form button {
+    padding: 22px;
+    background-color:#3b82f6;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  .phoneNum {
+  
+    display: flex;
+  }
+  
+  .countryCode {
+    margin-right: 6px; 
+  }
+  .EditPicIcon {
+    margin: -17px 0px 20px 58px;
+    width: 30px;
+    height: 30px;
+}
+  

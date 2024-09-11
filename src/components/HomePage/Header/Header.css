@@ -1,0 +1,149 @@
+/* {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  background: url("../../../assets/header_bg.png") no-repeat;
+  background-size: contain;
+  cursor: default;
+} */
+.content {
+  max-width: 67%;
+  margin: auto;
+  margin-left: 5vw;
+  margin-top: 8rem;
+  margin-bottom: 16rem;
+}
+
+
+.content h1 {
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 3.5vw;
+
+  line-height: 62px;
+  letter-spacing: 0.02em;
+  color: #100018;
+  font-family: "Bitter", sans-serif;
+}
+
+.header_span_1 {
+  color: #3b82f6;
+  font-weight: 600;
+  font-size: 53px;
+
+}
+
+.header_span_2 {
+  color: #100018;
+  font-weight: 500;
+  font-size: 53px;
+}
+
+.header_span_3 {
+  color: #3b82f6;
+  font-weight: 500;
+}
+
+.content p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #3b82f6;
+  font-family: "Roboto", sans-serif;
+}
+
+.content .get_started_btn {
+  font-size: 18px;
+  padding: 19px;
+  font-weight: 500;
+  color: #FFF;
+  vertical-align: middle;
+  margin-top: 20px;
+  background-color: #3b82f6;
+  border-radius: 0.4vw;
+  border-radius: 35px;
+}
+
+.get_started_btn svg {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.get_started_btn:active {
+  transform: scale(0.99);
+}
+
+.header_image {
+  text-align: center;
+}
+
+.header_right_btn {
+  margin-top: 1vw;
+  border-radius: 2vw;
+  min-width: fit-content;
+  width: 10vw;
+  padding: 0.2vw 2vw;
+  font-weight: 500;
+  font-size: 2vw;
+  border: 1px solid #000000;
+  font-family: "Bitter", sans-serif;
+}
+
+.header_image img {
+  margin: auto;
+  max-width: 80%;
+  margin-top: 5rem;
+}
+
+@media only screen and (max-width: 986px) {
+  .content {
+    margin: 7rem auto 7rem auto;
+    max-width: 67%;
+  }
+
+  .content h1 {
+    text-align: center;
+  }
+
+  .content p {
+    text-align: center;
+    font-size: 21px;
+  }
+
+  .btnGetStarted {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 727px) {
+  .content {
+    margin: 7rem auto 0rem auto;
+    max-width: 90%;
+  }
+
+  .content h1 {
+    text-align: center;
+  }
+
+  .content p {
+    text-align: center;
+    font-size: 21px;
+  }
+
+  .btnGetStarted {
+    display: block;
+    text-align: center;
+  }
+
+
+  .header_right_btn {
+    margin-top: 4vw;
+    margin-bottom: 4rem;
+    border-radius: 20px;
+    width: 15vw;
+    padding: 0.66vw 2vw;
+    font-weight: 500;
+    font-size: 19px;
+  }
+
+}

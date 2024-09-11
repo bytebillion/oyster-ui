@@ -1,0 +1,49 @@
+.update_profile_container {
+  background: #B1CEFB !important;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 50px 0;
+  display: flex;
+  /* justify-content: space-evenly; */
+  /* width: 80%; */
+  align-items: center;
+  /* height: 80px; */
+  cursor: default;
+}
+.update_profile_image {
+  position: relative;
+}
+.update_profile_image img {
+  max-width: 90%;
+  position: relative;
+  top: -15px;
+}
+.update_profile_container h6 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.015em;
+  color: #3e3f58;
+  margin-right: 60px;
+}
+.update_profile_container button {
+  background: #3b82f6;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 40px;
+}
+.dashboard_signOut_cta {
+  background: #3b82f6;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px;
+  width: 180px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}

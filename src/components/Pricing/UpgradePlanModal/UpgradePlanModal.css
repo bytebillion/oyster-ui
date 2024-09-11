@@ -1,0 +1,33 @@
+.UpgradePlanModal-head{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    letter-spacing: 0.02em;
+    color: #3b82f6;
+}
+.UpgradePlanModal-txt{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+.UpgradePlanModal-gems-img{
+    position: absolute;
+    margin-left: -19px;
+    margin-top: -9px;
+    width: 60px;
+}
+.UpgradePlanModal-Btn, .UpgradePlanModal-Btn:hover{
+    background: #3b82f6 !important;
+    border-radius: 6px;
+    font-family: 'Roboto' !important;
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    letter-spacing: -0.019em;
+    border: none !important;
+    color: #FFFFFF !important;
+}

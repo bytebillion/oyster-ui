@@ -1,0 +1,98 @@
+{
+  "name": "grammar",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@chakra-ui/react": "^2.5.5",
+    "@chakra-ui/spinner": "^2.0.12",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/lab": "^5.0.0-alpha.154",
+    "@mui/material": "^5.14.14",
+    "@react-pdf/renderer": "^3.1.12",
+    "@splinetool/runtime": "^0.9.284",
+    "@stripe/react-stripe-js": "^2.4.0",
+    "@stripe/stripe-js": "^2.2.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@tippyjs/react": "^4.2.6",
+    "@uidotdev/usehooks": "^2.0.1",
+    "axios": "^1.2.3",
+    "bootstrap": "^5.2.3",
+    "env-cmd": "^10.1.0",
+    "firebase": "^10.7.1",
+    "framer-motion": "^8.5.5",
+    "html2canvas": "^1.4.1",
+    "i": "^0.3.7",
+    "jspdf": "^2.5.1",
+    "less": "^4.1.3",
+    "lodash": "^4.17.21",
+    "npm": "^9.3.1",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.2",
+    "react-date-picker": "^10.0.3",
+    "react-dom": "^18.2.0",
+    "react-highlight-words": "^0.20.0",
+    "react-markdown": "^9.0.0",
+    "react-monaco-editor": "^0.54.0",
+    "react-pdf": "^7.3.3",
+    "react-router-dom": "^6.6.2",
+    "react-scripts": "5.0.1",
+    "react-select": "^5.7.0",
+    "react-slick": "^0.29.0",
+    "react-spring": "^9.7.3",
+    "react-switch": "^7.0.0",
+    "react-syntax-highlighter": "^15.5.0",
+    "react-timer-hook": "^3.0.5",
+    "react-tippy": "^1.4.0",
+    "react-to-print": "^2.14.13",
+    "react-toastify": "^9.1.1",
+    "react-type-animation": "^3.1.0",
+    "react-use-gesture": "^9.1.3",
+    "slick-carousel": "^1.8.1",
+    "sweetalert2": "^11.7.22",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "set PORT=3000 && react-scripts start",
+    "build:development": "env-cmd -f .env.development react-scripts build",
+    "build:production": "env-cmd -f .env.production react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "chart.js": "^4.3.1",
+    "moment": "^2.29.4",
+    "postcss-nesting": "^12.0.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-modal": "^3.16.1",
+    "tailwind-scrollbar": "^2.1.0",
+    "tailwindcss": "^3.2.4",
+    "tailwindcss-textshadow": "^2.1.3"
+  },
+  "description": "- React Quill duplicate toolbar if using V2\r   https://github.com/zenoamaro/react-quill/issues/784",
+  "main": "tailwind.config.js",
+  "author": "",
+  "license": "ISC"
+}

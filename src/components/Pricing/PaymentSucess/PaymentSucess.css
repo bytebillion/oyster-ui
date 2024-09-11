@@ -1,0 +1,24 @@
+.modal-content{
+    border-radius: 18px !important;
+}
+.PaymentSucess-txt {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: -0.015em;
+    color: #333342;
+}
+
+.PaymentSucess-Btn ,
+.PaymentSucess-Btn:hover {
+    background: #3b82f6 !important;
+    border-radius: 6px;
+    font-family: 'Roboto' !important;
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    letter-spacing: -0.019em;
+    border: none !important;
+    color: #FFFFFF !important;
+}

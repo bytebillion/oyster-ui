@@ -1,0 +1,130 @@
+.features_container {
+  width: 75%;
+  margin: 8vw auto;
+  cursor: default;
+}
+
+.feature_card_one {
+  /* margin-bottom: 16vw; */
+  padding-bottom: 6vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+}
+
+.feature_text_content {
+  max-width: 80%;
+}
+
+.feature_card_one .feature_text_content h5 {
+  font-weight: 700;
+  font-size: 2.5vw;
+  color: #3b82f6;
+  font-family: Inter;
+  /* line-height: 32px; */
+}
+
+.feature_card_one p {
+  text-align: justify;
+  font-size: 1.5vw;
+  letter-spacing: -0.015em;
+  color: #9795B5;
+  max-width: 80%;
+  line-height: 30px;
+}
+
+.feature_image img {
+  /* width: 30vw; */
+  padding: 2rem;
+  /* max-width: 100%; */
+}
+
+.feature_card_two {
+  /* margin-top: 100px;
+  margin-bottom: 100px; */
+  padding-bottom: 6vw;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  /* margin-left: 2vw; */
+}
+
+.feature_image_two img {
+  max-width: 100%;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.feature_image2_abs {
+  position: absolute;
+  left: -3vw;
+  top: -20%;
+  width: 32vw;
+}
+
+.feature_text_content_two2 {
+  width: 50%;
+  margin-bottom: 6vw;
+}
+
+.feature_image_two_small img {
+  max-width: 80%;
+}
+
+.feature_text_content_two {
+  max-width: 50%;
+}
+
+.feature_card_two h5 {
+  font-weight: 700;
+  font-size: 2.5vw;
+  color: #3b82f6;
+  font-family: Inter;
+}
+
+.feature_card_two p {
+  text-align: justify;
+  font-size: 1.5vw;
+  letter-spacing: -0.015em;
+  color: #2b2b2b;
+  max-width: 90%;
+  line-height: 30px;
+}
+
+
+@media screen and (max-width: 960px) {
+  .feature_image img {
+    /* width: 30vw; */
+    padding: 3rem;
+    /* max-width: 100%; */
+  }
+
+  .feature_card_one .feature_text_content h5 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 30px;
+    color: #3b82f6;
+    font-family: Inter;
+    /* line-height: 32px; */
+  }
+
+  .feature_card_one p {
+    text-align: justify;
+    text-align: center;
+    
+    font-size: 19px;
+    letter-spacing: -0.015em;
+    margin: auto;
+    color: #9795B5;
+    max-width: 80%;
+    line-height: 33px;
+    margin-top:27px ;
+}
+
+
+}

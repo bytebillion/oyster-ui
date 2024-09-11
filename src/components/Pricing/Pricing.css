@@ -1,0 +1,244 @@
+.pricing_container {
+  position: relative;
+  cursor: default;
+}
+
+.pricing_images2 {
+  position: absolute;
+  top: 30%;
+  left: 14%;
+  width: 13%;
+}
+
+.pricing_images3 {
+  position: absolute;
+  top: 20%;
+  right: 7%;
+}
+
+.pricing_images4 {
+  position: absolute;
+  bottom: -2%;
+  left: 6%;
+  width: 13%;
+}
+
+.pricing_images5 {
+  position: absolute;
+  bottom: 0;
+  right: 25%;
+  width: 10%;
+}
+
+.pricing_header_super {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing_header {
+  padding-top: 2vh;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "Bitter";
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 55px;
+  color: #6e6e70;
+  letter-spacing: 0.025em;
+}
+
+.pricing_span {
+  font-weight: 800;
+  font-size: 3rem;
+  background: radial-gradient(
+    65.25% 543.32% at 36.72% 34.75%,
+    #878dff 5.21%,
+    #9499f4 38.02%,
+    rgba(164, 169, 255, 0.33) 63.54%,
+    rgba(180, 184, 253, 0.82) 81.25%,
+    #8c92f3 93.75%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.with_span {
+  font-size: 30px;
+}
+
+.price_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 10vh 0;
+}
+
+.basic {
+  margin-right: 80px;
+}
+
+.standard h5 {
+  margin-bottom: 0.8rem;
+  font-family: "Bitter";
+  font-size: 2.2rem;
+  font-weight: 500;
+  letter-spacing: 0.015em;
+  color: #333342;
+  position: relative;
+}
+
+.basic h5 {
+  margin-bottom: 0.8rem;
+  font-family: "Bitter";
+  font-size: 2.2rem;
+  font-weight: 500;
+  letter-spacing: 0.015em;
+  color: #333342;
+}
+
+.pricing_card {
+  border: 1px solid #8D8BA7;
+  border-radius: 16px;
+  padding: 20px;
+  width: 332px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.pricing_card h3 {
+  font-family: "Bitter";
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: -0.015em;
+  color: #3b82f6;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* 
+.pricing_card ul {
+  margin: 0;
+  padding: 0;
+}
+
+.basic_ul {
+  margin-top: 20px !important;
+}
+
+.pricing_card ul li {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: -0.019em;
+  color: rgba(0, 0, 0, 0.8);
+  list-style-type: square;
+  line-height: 15px;
+  list-style: none;
+  padding: 10px 0;
+}
+
+.pricing_card ul li::marker {
+  color: #c4c7fb;
+  font-size: 1.2em;
+} */
+
+.pricing_price {
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: -0.019em;
+  color: #3b82f6;
+  margin-left: 12px;
+}
+
+.price_tag {
+  font-weight: 600;
+  font-size: 30px;
+  color:  #3b82f6;
+  margin-bottom: 4px;
+}
+
+.price_svg path {
+  fill: #333342;
+}
+
+.price_svg {
+  margin-right: 4px;
+  margin-top: 13px;
+}
+
+.pricing_btn {
+  margin-top: 20px;
+  background: #3b82f6;
+  padding: 9px 20px;
+  width: 100%;
+  font-family: "Bitter";
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: -0.019em;
+  border-radius: 29px;
+  color: #ffffff;
+  text-align: center;
+  border: 0px;
+}
+
+.price-trail {
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: -0.019em;
+  color: #3b82f6;
+  text-align: center;
+}
+
+.mainC {
+  display: flex;
+  padding-bottom: 13px;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.8);
+  list-style-type: square;
+  padding: 4px 0px 0px 10px;
+}
+
+.price_para{
+  color: #B1CEFB;
+}
+
+.amtSpam{
+  margin-left: 39px;
+}
+
+.monthTime {
+  margin-top: 24px;
+  margin-left: 53px;
+}
+
+@media only screen and (max-width: 727px) {
+  
+  .pricing_header {
+    font-weight: 600;
+    font-size: 38px;
+  }
+  
+  .pricing_span {
+    font-weight: bold;
+    font-size: 39px;
+   
+  }
+  
+  .with_span {
+    font-size: 20px;
+    display: block;
+  }
+}

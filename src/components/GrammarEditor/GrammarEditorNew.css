@@ -1,0 +1,194 @@
+.hidden {
+  flex-direction: column;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #000;
+  line-height: 22px;
+}
+
+.custom-underlined {
+  position: relative;
+  /* Create a positioning context */
+}
+.tippy-4{
+  background-color: blue;
+}
+
+.custom-underlined::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  /* Adjust the position of the underline */
+  width: 100%;
+  height: 2px;
+  /* Adjust the height of the underline */
+  background-color: blue;
+  /* Replace with your desired underline color */
+  z-index: -1;
+  /* Place the underline below the text */
+}
+
+.ql-container.ql-snow [data-custom-format="true"] {
+  color: red;
+  /* Apply your desired color */
+  text-decoration: underline;
+  /* Apply underline */
+}
+
+.error-decoration-customGreen {
+  text-decoration: underline;
+  text-decoration-color: #2A9D8F;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
+  animation: 1s ease forwards;
+}
+
+.error-decoration-customYellow {
+  text-decoration: underline;
+  text-decoration-color: #E9C46A;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
+  animation: 1s ease forwards;
+
+}
+
+.error-decoration-customOrange {
+  text-decoration: underline;
+  text-decoration-color: #f78000;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
+  animation: 1s ease forwards;
+
+}
+
+/* //hover */
+
+.hover-tooltip-customYellow {
+  position: absolute;
+  border: 2px solid #E9C46A;
+  border-radius: 10px;
+  background: #fff;
+  width: 400px;
+  /* word-break: break-all; */
+
+  /* height: 200px; */
+  top: 150px;
+  color: black;
+  padding-left: 20px;
+}
+
+.hover-tooltip-customOrange {
+  position: absolute;
+  border: 2px solid #f78000;
+  border-radius: 10px;
+  background: #fff;
+  width: 400px;
+  top: 150px;
+  color: black;
+  padding-left: 20px;
+}
+
+.hover-tooltip-customGreen {
+  position: absolute;
+  border: 2px solid #2A9D8F;
+  border-radius: 10px;
+  background: #fff;
+  width: 400px;
+  /* word-break: break-all; */
+
+  /* height: 200px; */
+  top: 150px;
+  color: black;
+  padding-left: 20px;
+}
+
+.replacement-options {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  height: 10%;
+  flex-wrap: wrap;
+  padding: 20px 20px 20px 0px;
+
+}
+
+.replacement-option-customGreen {
+  display: flex;
+  background-color: #2A9D8F;
+  word-wrap: break-word;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.replacement-option-customYellow {
+  display: flex;
+  background-color: #E9C46A;
+  word-wrap: break-word;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.replacement-option-customOrange {
+  display: flex;
+  background-color: #f78000;
+  word-wrap: break-word;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding: 5px;
+}
+.tippy-content {
+  display: none;
+}
+
+.monacoDiv{
+  height: 100%;
+}
+
+@media screen and (max-width: 900px) {
+
+  .react-monaco-editor-container {
+    height: 100% !important;
+  }
+
+  .monaco-editor,
+  .enable-user-select,
+  .no-minimap-shadow {
+    height: 100% !important;
+    width: 100% !important;
+  }
+
+  .overflow-guard {
+    height: 100% !important;
+    width: 100% !important;
+  }
+
+  .monaco-scrollable-element {
+    width: 100% !important;
+  }
+
+  .view-lines .monaco-mouse-cursor-text {
+    width: 100% !important;
+  }
+
+  .view-overlays {
+    width: 100% !important;
+  }
+}

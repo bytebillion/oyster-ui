@@ -1,0 +1,81 @@
+/* LogoutConfirmation.css */
+
+.subBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .subBox .class-1 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .subBox .class-1 img {
+    padding-right: 8px;
+  }
+  
+  .subBox .class-1 p {
+    margin-left: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #212121;
+  }
+  div:where(.swal2-container).swal2-backdrop-show, div:where(.swal2-container).swal2-noanimation {
+    background: rgb(0 0 0 / 73%)!important;
+}
+  .subBox .class-2 img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .divider {
+    margin: 8px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+  }
+  
+  /* Apply border-radius to the top and right corners of the popup */
+  .custom-popup {
+    border-radius: 40px 40px 0 0px;
+  }
+  
+  .sweetalert-title {
+    color: #3b82f6;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 28.8px;
+    padding: 20px;
+  }
+  
+  .sweetalert-text {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 20px;
+  }
+  
+  .swal2-popup.swal2-modal .swal2-styled {
+    /* Customize the box shadow for the buttons */
+    box-shadow: 0 -102px 66px rgb(226 18 33 / 0%), 0 6px 80px rgb(226 18 33 / 24%);
+  }
+  
+  .swal2-cancel {
+    background-color: #e7e8f7 !important;
+    color: #3b82f6 !important;
+    padding: 15px 45px 15px 45px !important;
+    border-radius: 100px !important;
+    box-shadow: 0 2px 4px rgba(226, 18, 33, 0.25);
+  }
+  
+  .swal2-confirm {
+    background-color: #3b82f6 !important;
+    padding: 15px 45px 15px 45px !important;
+    border-radius: 100px !important;
+    box-shadow: 0 2px 4px rgba(226, 18, 33, 0.25);
+  }
+ 
