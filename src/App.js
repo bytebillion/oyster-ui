@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Verify from "./components/Authentication/google";
+import Verify from "./components/Authentication/google"; 
 // import Pricing from "./components/Pricing/Pricing";
 import Dashboard from "./components/Dashboard/Dashboard.js";
 import Home from "./components/Home";
