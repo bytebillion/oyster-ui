@@ -3,7 +3,7 @@ const config = {
   frontend: {
     url: process.env.REACT_APP_FRONTEND_URL,
   },
-  backend: {
+  backend: { 
     baseUrl: process.env.REACT_APP_BACKEND_BASE_URL,
   },
   razorpay: {
