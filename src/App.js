@@ -6,7 +6,7 @@ import Dashboard from "./components/Dashboard/Dashboard.js";
 import Home from "./components/Home";
 import AuthContextProvider from "./components/context/auth";
 import UserContextProvider from "./components/context/user";
-import ChatBot from "./components/chatBot/ChatBot";
+import ChatBot from "./components/chatBot/ChatBot"; 
 
 // import HomePage from "./components/HomePage/HomePage";
 import HomePageNew from "./components/HomePageNew/index";
