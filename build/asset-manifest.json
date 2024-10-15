@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.30433f50.css",
-    "main.js": "/static/js/main.aeb92fe9.js",
+    "main.css": "/static/css/main.d27076e5.css",
+    "main.js": "/static/js/main.e85f5c2a.js",
     "static/media/photo-of-woman-wearing-eyeglasses-3184405.png": "/static/media/photo-of-woman-wearing-eyeglasses-3184405.0f71fac9a19df60da856.png",
     "static/media/Group 33.svg": "/static/media/Group 33.969acb51bf1d9cd86378a0562a8fead3.svg",
     "static/media/Testimonial1.png": "/static/media/Testimonial1.c5f577b82cd363875b2d.png",
@@ -85,11 +85,11 @@
     "static/media/Ellipse 45.svg": "/static/media/Ellipse 45.6f4a40824aab139f57ce00779f079506.svg",
     "static/media/Ellipse 46.svg": "/static/media/Ellipse 46.f4d8aced28685514d08ba02f4cc441b7.svg",
     "static/media/green-dot.svg": "/static/media/green-dot.97d57db056c511f4f5735e199bfccff2.svg",
-    "main.30433f50.css.map": "/static/css/main.30433f50.css.map",
-    "main.aeb92fe9.js.map": "/static/js/main.aeb92fe9.js.map"
+    "main.d27076e5.css.map": "/static/css/main.d27076e5.css.map",
+    "main.e85f5c2a.js.map": "/static/js/main.e85f5c2a.js.map"
   },
   "entrypoints": [
-    "static/css/main.30433f50.css",
-    "static/js/main.aeb92fe9.js"
+    "static/css/main.d27076e5.css",
+    "static/js/main.e85f5c2a.js"
   ]
 }
