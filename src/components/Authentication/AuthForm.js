@@ -7,6 +7,7 @@ import AuthStage from "./AuthStage";
 import OtpStage from "./OtpStage";
 import PersonalDetailsStage from "./PersonalDetailsStage";
 
+
 import { useMediaQuery } from "@chakra-ui/react";
 
 const AuthForm = ({ footer }) => {
