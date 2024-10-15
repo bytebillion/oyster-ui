@@ -237,6 +237,7 @@ function ContactUs() {
                           placeholder="Please type your message here..."
                         />
                       </div>
+                      
                       <button
                         type="submit"
                         className=" font-bold  button  mt-2"
