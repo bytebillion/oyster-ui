@@ -168,158 +168,182 @@ const Main = ({setUserData, userData}) => {
  }, [fetchDocuments]);
 
  return (
-  <div className="ml-16 mt-7 flex-1 overflow-hidden">
-   <div className="d-flex justify-content-between align-items-center">
-    <div className="flex relative w-[22rem] border-[2px] border-[#B1CEFB] rounded-lg">
-     <textarea
-      className="p-1 px-3 resize-none outline-none text-[#6E6E70] rounded-lg"
-      value={seachQuery}
-      onChange={(e) => setSearchQuery(e.target.value)}
-      rows="1"
-      cols="40"
-      placeholder="Search"
-     ></textarea>
-     <img className="absolute top-1 right-4" src={searchImg} alt="search" />
-    </div>
-    <button
-     onClick={() => {
-      localStorage.removeItem("token");
-      console.log("logged out");
-      setUser(null);
-      setUserData(null);
-      navigate("/auth");
-      setIsAuthenticated(false)
-     }}
-     className="dashboard_signOut_cta"
-    >
-     Sign Out
-    </button>
-      </div>
-      {/* Update profile banner */}
-      {user?.phoneNumber == null && (
-        <div className="update_profile_container md:w-[100%] xl:w-[80%] h-[100px]">
-          <div className="update_profile_image">
-            {" "}
-            <img src={girl} alt="girl_image" />
-          </div>
-          <h6 className="w-[100%]">
-            Update your Phone Number to know about latest trends and updates.
-          </h6>
-          <button onClick={() => setOpen(true)} className="md:w-[400px]">Update Phone Number</button>
-          <PersonalDetails user={userData} open={open} setOpen={setOpen} />
-        </div>
-      )}
+  // <div className="ml-16 mt-7 flex-1 overflow-hidden">
+  //  <div className="d-flex justify-content-between align-items-center">
+  //   <div className="flex relative w-[22rem] border-[2px] border-[#B1CEFB] rounded-lg">
+  //    <textarea
+  //     className="p-1 px-3 resize-none outline-none text-[#6E6E70] rounded-lg"
+  //     value={seachQuery}
+  //     onChange={(e) => setSearchQuery(e.target.value)}
+  //     rows="1"
+  //     cols="40"
+  //     placeholder="Search"
+  //    ></textarea>
+  //    <img className="absolute top-1 right-4" src={searchImg} alt="search" />
+  //   </div>
+  //   <button
+  //    onClick={() => {
+  //     localStorage.removeItem("token");
+  //     console.log("logged out");
+  //     setUser(null);
+  //     setUserData(null);
+  //     navigate("/auth");
+  //     setIsAuthenticated(false)
+  //    }}
+  //    className="dashboard_signOut_cta"
+  //   >
+  //    Sign Out
+  //   </button>
+  //     </div>
+  //     {/* Update profile banner */}
+  //     {user?.phoneNumber == null && (
+  //       <div className="update_profile_container md:w-[100%] xl:w-[80%] h-[100px]">
+  //         <div className="update_profile_image">
+  //           {" "}
+  //           <img src={girl} alt="girl_image" />
+  //         </div>
+  //         <h6 className="w-[100%]">
+  //           Update your Phone Number to know about latest trends and updates.
+  //         </h6>
+  //         <button onClick={() => setOpen(true)} className="md:w-[400px]">Update Phone Number</button>
+  //         <PersonalDetails user={userData} open={open} setOpen={setOpen} />
+  //       </div>
+  //     )}
 
-      <div className="mt-8 flex text-[#767790]">
-        <span className="mr-4 text-[1rem] text-[#3b82f6] my-auto">Sort:</span>
-        <Select
-          className="w-[11rem]"
-          styles={{
-            control: (provided) => ({
-              ...provided,
-              border: "none",
-              borderRadius: "0",
-              boxShadow: "none",
-              backgroundColor: "transparent",
-            }),
-            singleValue: (provided) => ({
-              ...provided,
-              color: "#616161",
-            }),
-            option: (provided) => ({
-              ...provided,
-              color: "#616161",
-              backgroundColor: "#F5F5F5",
-              borderBottom: "1px solid #E0E0E0",
-            }),
-            menuList: (provided) => ({
-              ...provided,
-              padding: "0",
-            }),
-            value: (provided) => ({
-              ...provided,
-              color: "#646464",
-            }),
-            dropdownIndicator: (provided) => ({
-              ...provided,
-              color: "#616161",
-            }),
-          }}
-          options={[
-            { label: "Last Modified", value: "last-modified" },
-            { label: "Last Opened", value: "last-opened" },
-            { label: "Title", value: "title" },
-          ]}
-          onChange={(e) => {
-            sortDocumentsOnChange(e.value);
-          }}
-          placeholder="Select an option"
-        />
-      </div>
+  //     <div className="mt-8 flex text-[#767790]">
+  //       <span className="mr-4 text-[1rem] text-[#3b82f6] my-auto">Sort:</span>
+  //       <Select
+  //         className="w-[11rem]"
+  //         styles={{
+  //           control: (provided) => ({
+  //             ...provided,
+  //             border: "none",
+  //             borderRadius: "0",
+  //             boxShadow: "none",
+  //             backgroundColor: "transparent",
+  //           }),
+  //           singleValue: (provided) => ({
+  //             ...provided,
+  //             color: "#616161",
+  //           }),
+  //           option: (provided) => ({
+  //             ...provided,
+  //             color: "#616161",
+  //             backgroundColor: "#F5F5F5",
+  //             borderBottom: "1px solid #E0E0E0",
+  //           }),
+  //           menuList: (provided) => ({
+  //             ...provided,
+  //             padding: "0",
+  //           }),
+  //           value: (provided) => ({
+  //             ...provided,
+  //             color: "#646464",
+  //           }),
+  //           dropdownIndicator: (provided) => ({
+  //             ...provided,
+  //             color: "#616161",
+  //           }),
+  //         }}
+  //         options={[
+  //           { label: "Last Modified", value: "last-modified" },
+  //           { label: "Last Opened", value: "last-opened" },
+  //           { label: "Title", value: "title" },
+  //         ]}
+  //         onChange={(e) => {
+  //           sortDocumentsOnChange(e.value);
+  //         }}
+  //         placeholder="Select an option"
+  //       />
+  //     </div>
 
-      {loadingDocuments ? (
-        <div
-          style={{
-            height: "80%",
-            width: "100%",
-            display: "grid",
-            placeContent: "center",
-          }}
-        >
-          <div
-            style={{
-              margin: "auto",
-              display: "grid",
-            }}
-          >
-            <Spinner size="6xl" w="30px" h="30px" mx="auto" mb="10px" />
-            <p textAlign="center">Loading... Please don't refresh the page.</p>
-          </div>
-        </div>
-      ) : (
-        <div className="container mx-auto">
-          <div
-            className={`my-8 pt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 
-									h-[${user?.phoneNumber != null ? "70vh" : "40vh"}] 
-									overflow-scroll scrollbar-thin justify-start`}
-          >
-            {seachQuery === "" && (
-              <div
-                onClick={newDocument}
-                className="cursor-pointer m-1 mr-5 p-10 block w-[14rem] h-[12rem] text-center rounded-lg shadow-md"
-              >
-                <div className="m-auto w-50">
-                  <svg width="74" height="74" viewBox="0 0 74 74" fill="none">
-                    <path
-                      d="M59.4313 21.5061L43.2438 5.31859C43.0403 5.09264 42.7901 4.91358 42.5106 4.7938C42.2311 4.67402 41.929 4.61637 41.625 4.62484H18.5C17.2745 4.6285 16.1002 5.11695 15.2337 5.98351C14.3671 6.85008 13.8787 8.02434 13.875 9.24984V64.7498C13.8787 65.9753 14.3671 67.1496 15.2337 68.0162C16.1002 68.8827 17.2745 69.3712 18.5 69.3748H55.5C56.7255 69.3712 57.8998 68.8827 58.7663 68.0162C59.6329 67.1496 60.1213 65.9753 60.125 64.7498V23.1248C60.1335 22.8209 60.0758 22.5187 59.956 22.2392C59.8363 21.9597 59.6572 21.7096 59.4313 21.5061V21.5061ZM41.625 10.1748L54.575 23.1248H41.625V10.1748ZM55.5 64.7498H18.5V9.24984H37V23.1248C37.0037 24.3503 37.4921 25.5246 38.3587 26.3912C39.2252 27.2577 40.3995 27.7462 41.625 27.7498H55.5V64.7498Z"
-                      fill="#B1CEFB"
-                    />
-                  </svg>
+  //     {loadingDocuments ? (
+  //       <div
+  //         style={{
+  //           height: "80%",
+  //           width: "100%",
+  //           display: "grid",
+  //           placeContent: "center",
+  //         }}
+  //       >
+  //         <div
+  //           style={{
+  //             margin: "auto",
+  //             display: "grid",
+  //           }}
+  //         >
+  //           <Spinner size="6xl" w="30px" h="30px" mx="auto" mb="10px" />
+  //           <p textAlign="center">Loading... Please don't refresh the page.</p>
+  //         </div>
+  //       </div>
+  //     ) : (
+  //       <div className="container mx-auto">
+  //         <div
+  //           className={`my-8 pt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 
+	// 								h-[${user?.phoneNumber != null ? "70vh" : "40vh"}] 
+	// 								overflow-scroll scrollbar-thin justify-start`}
+  //         >
+  //           {seachQuery === "" && (
+  //             <div
+  //               onClick={newDocument}
+  //               className="cursor-pointer m-1 mr-5 p-10 block w-[14rem] h-[12rem] text-center rounded-lg shadow-md"
+  //             >
+  //               <div className="m-auto w-50">
+  //                 <svg width="74" height="74" viewBox="0 0 74 74" fill="none">
+  //                   <path
+  //                     d="M59.4313 21.5061L43.2438 5.31859C43.0403 5.09264 42.7901 4.91358 42.5106 4.7938C42.2311 4.67402 41.929 4.61637 41.625 4.62484H18.5C17.2745 4.6285 16.1002 5.11695 15.2337 5.98351C14.3671 6.85008 13.8787 8.02434 13.875 9.24984V64.7498C13.8787 65.9753 14.3671 67.1496 15.2337 68.0162C16.1002 68.8827 17.2745 69.3712 18.5 69.3748H55.5C56.7255 69.3712 57.8998 68.8827 58.7663 68.0162C59.6329 67.1496 60.1213 65.9753 60.125 64.7498V23.1248C60.1335 22.8209 60.0758 22.5187 59.956 22.2392C59.8363 21.9597 59.6572 21.7096 59.4313 21.5061V21.5061ZM41.625 10.1748L54.575 23.1248H41.625V10.1748ZM55.5 64.7498H18.5V9.24984H37V23.1248C37.0037 24.3503 37.4921 25.5246 38.3587 26.3912C39.2252 27.2577 40.3995 27.7462 41.625 27.7498H55.5V64.7498Z"
+  //                     fill="#B1CEFB"
+  //                   />
+  //                 </svg>
 
-                  <div className="my-3 text-[#717171] text-2xl font-[600]">New</div>
-                </div>
-              </div>
-            )}
+  //                 <div className="my-3 text-[#717171] text-2xl font-[600]">New</div>
+  //               </div>
+  //             </div>
+  //           )}
 
-            {documents?.length > 0 &&
-              documents?.map((doc, index) => (
-                <div className={index}>
-                  <Document
-                    id={doc?._id}
-                    title={doc?.title}
-                    text={doc?.text}
-                    createdAt={doc?.createdAt}
-                    suggestionCount={doc?.suggestionCount}
-                    deleteDocument={deleteDocument}
-                    fetchDocuments={fetchDocuments}
-                  />
-                </div>
-              ))}
-          </div>
-        </div>
-      )}
-      <ToastContainer position="top-right" newestOnTop />
-    </div>
+  //           {documents?.length > 0 &&
+  //             documents?.map((doc, index) => (
+  //               <div className={index}>
+  //                 <Document
+  //                   id={doc?._id}
+  //                   title={doc?.title}
+  //                   text={doc?.text}
+  //                   createdAt={doc?.createdAt}
+  //                   suggestionCount={doc?.suggestionCount}
+  //                   deleteDocument={deleteDocument}
+  //                   fetchDocuments={fetchDocuments}
+  //                 />
+  //               </div>
+  //             ))}
+  //         </div>
+  //       </div>
+  //     )}
+  //     <ToastContainer position="top-right" newestOnTop />
+  //   </div>
+
+  <div className="ml-16 mt-7 flex-1 overflow-hidden " >
+  <div className="flex justify-content-between align-items-center">
+   <div className="flex relative w-[80%]  drop-shadow-lg  h-[40px] "  >
+
+        <img className="absolute left-2 top-1/2 transform -translate-y-1/2 h-[24px] w-[24px] mt-[2px]  " src={searchImg} alt="search" />
+
+    <input
+     className="p-1 px-3 pl-100  resize-none  w-[100%] outline-none text-[#000000] placeholder-[#000000] "
+     style={{ textIndent: '20px' }}
+     value={seachQuery}
+     onChange={(e) => setSearchQuery(e.target.value)}
+     rows="1"
+     cols="40"
+     placeholder="Search"
+
+    ></input>
+    
+    <button className="absolute  right-0 bg-[#3A3AF4] text-[#FFFFFF] w-[10%] h-[100%]">Search</button>
+   </div>
+  
+     </div>
+     
+   </div>
   );
 };
 

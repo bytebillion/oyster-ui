@@ -1,7 +1,11 @@
 import React, { useContext, useEffect, useState } from "react";
-import account from "../../assets/Dashboard/LeftPane/material-symbols_account-circle-outline.png";
+import ProfileIcon from "../../assets/Dashboard/LeftPane/ProfileIcon.png";
 import support from "../../assets/Dashboard/LeftPane/Vector.png";
 import logo from "../../assets/Dashboard/LeftPane/OYSTER-WHITE.png";
+import settingIcon from "../../assets/Dashboard/LeftPane/settingIcon.png"
+import homeLogo from "../../assets/Dashboard/LeftPane/homeIcon.png"
+import editIcon from "../../assets/Dashboard/LeftPane/editIcon.png"
+import signInIcon from "../../assets/Dashboard/LeftPane/signInIcon.png"
 import { useAuth } from "../context/auth";
 import PersonalDetails from "../PersonalDetails/PersonalDetails";
 import { UserContext } from "../context/user";
@@ -10,10 +14,13 @@ import { getDaysDiff } from "../../libs/utility";
 import Spinner from "../Spinner";
 import { useNavigate } from "react-router-dom";
 import { subscription } from "../../libs/constants";
-import {UserDispatchContext, useUpgradeModal,
+
+import {
+  UserDispatchContext, useUpgradeModal,
 } from "../context/user";
-const LeftPane = () => {
+const LeftPane = ({ setUserData, userData }) => {
   const user = useContext(UserContext);
+  const { setIsAuthenticated } = useAuth();
   const { logout, isAuthenticated } = useAuth();
   const navigate = useNavigate();
   const [email, setEmail] = useState(null);
@@ -47,13 +54,15 @@ const LeftPane = () => {
 
   // const initials = username?.substring(0, 1);
   return (
-
+    // px-3
     <div className="pt-6 px-3 w-[15rem] font-roboto shadow-xl h-screen flex flex-col justify-between bg-[#1C2333]">
-  <div>
-    <div>
-      <img src={logo} alt="logo" />
-    </div>
-    <div className="mt-12 mb-4 bg-[#D8E6FD] rounded-lg py-2 px-2">
+
+
+      <div className="h-[12%]">
+        <div>
+          <img src={logo} alt="logo" className="h-6 w-23 mt-4 ml-3" />
+        </div>
+        {/* <div className="mt-12 mb-4 bg-[#D8E6FD] rounded-lg py-2 px-2">
       <div className="flex">
         <div className="user_profile">{user?.name?.substring(0, 1)}</div>
         <div className="text-[#000000] md:text-[14px] lg:text[15px] font-[500] user_profile_name">
@@ -118,46 +127,75 @@ const LeftPane = () => {
         </div>
         <div className="w-[90%] truncate">{email ?? "anon@appoyster.com"}</div>
       </div>
-    </div>
-  </div>
+    </div> */}
+      </div>
 
-  <div>
-    <div
-      className="my-2 flex text-[#3F3B3C] text-sm font-[400] bg-[#D8E6FD] rounded-lg py-2 px-2 cursor-pointer"
-      onClick={() => setShowPersonalDetails(true)}
-    >
-      <img className="mr-4 h-fit" src={account} alt="acc" />
-      Account
-    </div>
-    <div className="my-3 flex text-[#3F3B3C] text-sm font-[400] bg-[#D8E6FD] rounded-lg py-2 px-2 cursor-pointer">
-      <img className="ml-1 mr-4 h-fit" src={support} alt="Support" />
-      Support
-    </div>
-    <button 
-     className="my-3 flex text-[#3F3B3C] text-sm font-[400] bg-[#D8E6FD] rounded-lg py-2 px-2 cursor-pointer"
-     onClick={() => {
-      localStorage.removeItem("token");
-      console.log("logged out");
-      setUser(null);
-      setUserData(null);
-      navigate("/auth");
-      // setIsAuthenticated(false)
-     }}
-    
-    >
-     Sign Out
-    </button>
-  </div>
 
-  <PersonalDetails
-    user={user}
-    open={showPersonalDetails}
-    setOpen={setShowPersonalDetails}
-  />
-</div>
+
+      <div className="h-[88%] flex flex-col justify-between">
+        <div>
+        <div
+          className=" my-2 flex text-[#AAB3C5] text-[16px] font-[400] rounded-lg py-2 px-2 cursor-pointer"          
+        >
+          <img className="mr-1 h-[23px] w-[24px]" src={homeLogo} alt="acc" />
+          Home
+        </div>
+
+        <div
+          className=" my-2 ml-1 flex text-[#AAB3C5] text-[16px] font-[400] rounded-lg py-2 px-2 cursor-pointer"          
+        >
+          <img className="mr-1 h-[18px] w-[18px]" src={editIcon} alt="acc" />
+          Grammar Editor
+        </div>
+        
+        </div>
+       
+
+
+        <div style={{ borderTop: "1px solid #1F2937" }}>
+
+          <div
+            className="my-2 flex text-[#AAB3C5] text-[16px] font-[400]  rounded-lg py-2 px-2 cursor-pointer"
+            onClick={() => setShowPersonalDetails(true)}
+          >
+            <img className="mr-2 mt-0.5 h-[18px] w-[18px]" src={ProfileIcon} alt="acc" />
+            Profile
+          </div>
+          <div className="my-3 flex text-[#AAB3C5] text-[16px] font-[400]  rounded-lg py-2 px-2 cursor-pointer">
+            <img className="mr-1 mt-0.5 h-[18px] w-[18px]" src={settingIcon} alt="Support" />
+            Settings
+          </div>
+          <button
+            className="my-3 w-full items-center flex text-[#AAB3C5] text-[16px] font-[400] rounded-lg py-2 px-2 cursor-pointer "
+            onClick={() => {
+              localStorage.removeItem("token");
+              console.log("logged out");
+              setUser(null);
+              setUserData(null);
+              navigate("/auth");
+              setIsAuthenticated(false)
+            }}
+
+          >
+             <img className="mr-1 mt-0.5 h-[18px] w-[18px]" src={signInIcon} alt="Support" />
+             Log out
+          </button>
+
+        </div>
+
+
+      </div>
+
+
+      <PersonalDetails
+        user={user}
+        open={showPersonalDetails}
+        setOpen={setShowPersonalDetails}
+      />
+    </div>
 
     // <div className="pt-6 px-3 w-[15rem] font-roboto shadow-xl h-screen" >
-     
+
     //   <div >
     //     <img src={logo} alt="logo" />
     //   </div>
@@ -217,7 +255,7 @@ const LeftPane = () => {
     //                 ? `${daysLeft} days free trial left`
     //                 : "Trial period has ended, subscribe now!"}
     //             </div>
-                
+
     //           </>
     //         )} */}
     //       </div>
