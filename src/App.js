@@ -1,12 +1,12 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 import Verify from "./components/Authentication/google";
 // import Pricing from "./components/Pricing/Pricing";
-import Dashboard from "./components/Dashboard/Dashboard.js";
+import Dashboard from "./components/Dashboard/Dashboard.js"; 
 import Home from "./components/Home";
 import AuthContextProvider from "./components/context/auth";
 import UserContextProvider from "./components/context/user";
-import ChatBot from "./components/chatBot/ChatBot";
+import ChatBot from "./components/chatBot/ChatBot"; 
 
 // import HomePage from "./components/HomePage/HomePage";
 import HomePageNew from "./components/HomePageNew/index";
@@ -40,10 +40,8 @@ function App() {
           <Routes>
             {/* <Route exact path="/auth" element={<AuthForm />} /> */}
             <Route exact path="/auth" element={<LogIn />} />
-            <Route exact path="/new-dashboard" element={<MainDash/>} />
-            <Route exact path="/my-account" element={<MyAccount/>} />
-
-
+            <Route exact path="/new-dashboard" element={<MainDash />} />
+            <Route exact path="/my-account" element={<MyAccount />} />
             <Route exact path="/verify" element={<Verify />} />
             <Route exact path="/" element={<HomePageNew />} />
             {/* <Route exact path="/pricing" element={<Pricing />} /> */}
@@ -60,7 +58,6 @@ function App() {
               path="/Terms-&-Conditions"
               element={<TermsConditions />}
             />
-            <Route exact path="/Contact-Us" element={<ContactUs />} />
             <Route
               exact
               path="/editor/:id"
@@ -70,6 +67,7 @@ function App() {
                 </Restricted>
               }
             />
+            <Route exact path="/ContactUs" element={<ContactUs />} />
             <Route exact path="/blogs" element={<Blogs />} />
             <Route exact path="/about" element={<About />} />
             <Route exact path="/pricing-ltd" element={<HomeLtd />} />

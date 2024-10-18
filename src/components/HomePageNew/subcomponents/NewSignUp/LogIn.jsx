@@ -17,7 +17,7 @@ import axios from "../../../../libs/axios";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { provider, auth } from "../../../../firebase.js";
-import { signInWithPopup } from "firebase/auth";
+import { signInWithCredential, signInWithPopup } from "firebase/auth";
 import { Link } from "react-router-dom";
 import { UserDispatchContext, useUpgradeModal } from "../../../context/user.js";
 import { useAuth } from "../../../context/auth.js";
@@ -45,7 +45,7 @@ const LogIn = () => {
 
   const getUser = (isLoggedIn) => {
     if(isLoggedIn) {
-      axios.get("/api/user").then((res) => {
+      axios.get("/api/user",{WithCredentials : true}).then((res) => {
         if (res.status === 200) {
           // setUserDetails(res.data.data)
           if (res.data.data) {
@@ -121,7 +121,7 @@ const LogIn = () => {
         };
 
         try {
-          const { data } = await axios.post(loginUserURL, body);
+          const { data } = await axios.post(loginUserURL, body, {WithCredentials : true});
           if (data?.success) {
             getUser(true)
             if(data.signInData.token) {
@@ -161,7 +161,7 @@ const LogIn = () => {
 
       if (!isFirebaseUser) {
         try {
-          const res = await axios.post("/api/auth/init", { email });
+          const res = await axios.post("/api/auth/init", {WithCredentials : true} ,{ email });
           if (res.status === 200) {
             setSendOtp(true);
             toast.success("OTP sent");
