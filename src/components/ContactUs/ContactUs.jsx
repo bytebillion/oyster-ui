@@ -7,7 +7,6 @@ import mailImg from "../../assets/Email.svg";
 import phoneImg from "../../assets/Phone.svg";
 import mapImg from "../../assets/location.svg";
 import Footer from "../HomePage/Footer/Footer";
-
 import Navbar from "../HomePage/Navbar/Navbar";
 import "./ContactUs.css";
 // import { pink } from "@mui/material/colors";
@@ -238,6 +237,7 @@ function ContactUs() {
                           placeholder="Please type your message here..."
                         />
                       </div>
+                      
                       <button
                         type="submit"
                         className=" font-bold  button  mt-2"
