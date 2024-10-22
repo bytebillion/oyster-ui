@@ -132,7 +132,7 @@ const LeftPane = ({ setUserData, userData }) => {
 
 
 
-      <div className="h-[88%] flex flex-col justify-between">
+      <div className="h-[88%] flex flex-col justify-between mt-[20px]" >
         <div>
         <div
           className=" my-2 flex text-[#AAB3C5] text-[16px] font-[400] rounded-lg py-2 px-2 cursor-pointer"          
