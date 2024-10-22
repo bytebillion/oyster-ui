@@ -17,7 +17,7 @@ import axios from "../../../../libs/axios";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { provider, auth } from "../../../../firebase.js";
-import { signInWithCredential, signInWithPopup } from "firebase/auth";
+import { signInWithPopup } from "firebase/auth";
 import { Link } from "react-router-dom";
 import { UserDispatchContext, useUpgradeModal } from "../../../context/user.js";
 import { useAuth } from "../../../context/auth.js";
