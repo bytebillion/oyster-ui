@@ -417,12 +417,15 @@ const Main = ({ setUserData, userData }) => {
   <Grid item xs={12} sm={6} md={4} lg={2}>
     <div style={{  boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)", borderRadius: "12px", width: "85%", height: "173px" }}>
       <Card
+        onClick={newDocument}
         sx={{
           borderTopLeftRadius: "5px !important",
           borderTopRightRadius: "5px !important",
           borderBottomLeftRadius: "0px !important",
           borderBottomRightRadius: "0px !important",
-          padding: "6%"
+          padding: "6%",
+          cursor: "pointer",
+          
         }}
       >
         <CardContent
