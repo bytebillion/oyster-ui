@@ -44,7 +44,7 @@ const MobileProfile = ({ setMobProfile, setUserData, userData }) => {
       ) : subscribe ? (
         <Subscribe setSubscribe={setSubscribe} />
       ) : (
-        <div className="mobile-profile-container">
+        <div className="mobile-profile-container" >
           <div className="box-1">
             <div className="back-icon" onClick={() => setMobProfile(false)}>
               <img src={arrow} alt="Back" />
