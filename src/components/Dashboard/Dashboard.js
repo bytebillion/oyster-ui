@@ -22,12 +22,12 @@ const Dashboard = () => {
 
 
   return (
-    <div className="flex h-[100%] w-[100%]">
+    <div className="flex h-[100%] w-[100%]" style={{backgroundColor:"#ECECEC"}}>
       {isMobile ? (
         <MobileDashboard userData={userData} setUserData={setUserData} />
       ) : (
         <>
-          <LeftPane />
+          <LeftPane userData={userData} setUserData={setUserData}  />
           <Main userData={userData} setUserData={setUserData} />
         </>
       )}

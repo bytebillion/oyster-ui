@@ -6,6 +6,8 @@ import { useNavigate } from "react-router-dom";
 import moment from "moment";
 import { Img, useMediaQuery } from "@chakra-ui/react";
 import deleteOutline from "../../assets/Dashboard/Main/trashOutline.svg";
+import { Box, Card, CardContent, Grid, Typography } from "@mui/material";
+import { useTheme } from '@mui/material/styles'
 
 const Document = ({
   id,
@@ -15,6 +17,7 @@ const Document = ({
   deleteDocument,
   fetchDocuments,
   suggestionCount,
+  index
 }) => {
   const navigate = useNavigate();
   const [isMobile] = useMediaQuery("(max-width: 800px)");
@@ -28,13 +31,13 @@ const Document = ({
   const thatDate = new Date(date).getTime();
   const nowDate = new Date().getTime();
   const m = moment(thatDate);
-
+  const theme = useTheme()
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (deleteRef.current && deleteRef.current.contains(e.target)) {
         setShow(true);
       } else if (docRef.current && docRef.current.contains(e.target)) {
-        navigate(`/editor/${id}`);
+        // navigate(`/editor/${id}`);
       }
     };
 
@@ -46,8 +49,9 @@ const Document = ({
   }, [id, navigate]);
 
   return (
-    <div
-      style={{ hyphens: "auto" }}
+    <>
+      {/* <div
+      style={{ hyphens: "auto"  }}
       className={`d-flex flex-col cursor-pointer mr-0 p-3 w-[${isMobile ? "100%" : "14rem"}] h-[12rem] text-center rounded-sm shadow-md relative hyphens-auto`}
     >
       <div ref={docRef} key={id} className="w-[100%] h-[100%] bg-white">
@@ -75,19 +79,72 @@ const Document = ({
         <button
           ref={deleteRef}
           className="absolute bottom-4 right-1"
+          style={{backgroundColor:"red"}}
           onClick={() => navigate(`/editor/${id}`)} // Added click event to navigate
         >
-          <Img src={deleteOutline} />
+          <Img src={deleteOutline}   />
         </button>
       </div>
       <Delete
+  
         id={id}
         show={show}
         setShow={setShow}
         deleteDocument={deleteDocument}
         fetchDocuments={fetchDocuments}
       />
-    </div>
+    </div> */}
+
+
+
+
+      <Grid item xs={4} sm={6} lg={2}  ref={docRef} sx={{ mr: 3,cursor:"pointer"  }}>
+        <div style={{ boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)", borderRadius: "12px", width: "140px", height: "173px" }} >
+          <Card sx={{
+            borderTopLeftRadius: "5px !important",
+            borderTopRightRadius: "5px !important",
+            borderBottomLeftRadius: "0px !important",
+            borderBottomRightRadius: "0px !important", width: "140px", height: "142px"
+          }}>
+            <CardContent >
+            <Typography sx={{ fontSize: "14px", lineHeight: "13px", color: "#090909", fontWeight: 600, }}>
+          {title ? title :"-"}
+        </Typography>
+              <Typography sx={{ fontSize: "10px", lineHeight: "13px", color: "#090909", fontWeight: 400, }}> {text != null && text?.length > 0 ? text?.substr(0, 140) + "..." : ""}</Typography>
+            </CardContent>
+          </Card>
+          <Card sx={{
+            borderTopLeftRadius: "0px !important",
+            borderTopRightRadius: "0px !important",
+            borderBottomLeftRadius: "5px !important",
+            borderBottomRightRadius: "5px !important", borderTop: "0.2px solid #000000", paddingLeft: "10%", cursor: "pointer"
+          }} >
+            <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+              <Typography sx={{ fontSize: "20px", color: "#3A3AF4", fontWeight: 600, textAlign: "left" }}>{index}</Typography>
+              <button
+               style={{ width:"20px" , marginRight:"10px"}}
+                ref={deleteRef}
+                className=""
+                // onClick={() => navigate(`/editor/${id}`)} // Added click event to navigate
+              >
+                <Img src={deleteOutline}/>
+              </button>
+              <Delete
+                id={id}
+                show={show}
+                setShow={setShow}
+                deleteDocument={deleteDocument}
+                fetchDocuments={fetchDocuments}
+              />
+
+            </Box>
+
+          </Card>
+        </div>
+      </Grid>
+
+
+    </>
   );
 };
 
