@@ -174,8 +174,8 @@ const MobileDashboard = ({ userData, setUserData }) => {
       {mobProfile ? (
         <MobileProfile setMobProfile={setMobProfile} userData={userData} setUserData={setUserData} />
       ) : (
-        <div className="mobile-dashboard-container w-[100%] h-[100%] p-[25px] " style={{display:"flex" , flexDirection:"column" , justifyItems:"center" ,alignItems:"center"}}>
-          <div className="mobile-header d-flex w-[100%] justify-between content-center p-[5px]">
+        <div className="mobile-dashboard-container w-[100%] h-[100%] p-[25px] " style={{display:"flex" , flexDirection:"column" , justifyItems:"center" ,alignItems:"center" }}>
+          <div className="mobile-header d-flex w-[100%] justify-between content-center p-[5px] ">
             <Img src={oysterLogo} />
             <div
               onClick={() => setMobProfile(true)}
@@ -185,7 +185,7 @@ const MobileDashboard = ({ userData, setUserData }) => {
               {/* {user?.name?.substring(0, 1)} */}
             </div>
           </div>
-          <div className=" flex-1 flex-col space-y-[30px] ">
+          <div className=" flex-1 flex-col w-[100%] space-y-[30px] ">
             <div className="search-bar d-flex mt-[30px] justify-content-between align-items-center">
               <div className="d-flex w-[100%] border-[2px] border-[#B1CEFB] rounded-lg">
                 <textarea
