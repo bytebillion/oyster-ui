@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.03967fad.css",
-    "main.js": "/static/js/main.d169249f.js",
+    "main.js": "/static/js/main.f5923582.js",
     "static/media/photo-of-woman-wearing-eyeglasses-3184405.png": "/static/media/photo-of-woman-wearing-eyeglasses-3184405.0f71fac9a19df60da856.png",
     "static/media/Group 33.svg": "/static/media/Group 33.969acb51bf1d9cd86378a0562a8fead3.svg",
     "static/media/Testimonial1.png": "/static/media/Testimonial1.c5f577b82cd363875b2d.png",
@@ -16,6 +16,7 @@
     "static/media/ClientLogoNew-removebg-preview.png": "/static/media/ClientLogoNew-removebg-preview.4ffcb020e192a9581b48.png",
     "static/media/detailImage1.jpeg": "/static/media/detailImage1.f26ecc18c5c57afaadcc.jpeg",
     "static/media/Contact-home.svg": "/static/media/Contact-home.039cf577c058421e8674802ffb3ee8fb.svg",
+    "static/media/OYSTER-WHITE.png": "/static/media/OYSTER-WHITE.233517b0cd448f653acf.png",
     "static/media/artificial-intelligence 1.svg": "/static/media/artificial-intelligence 1.aede8d9d5a786c148184e17c819bb0e9.svg",
     "static/media/authenticity 2.svg": "/static/media/authenticity 2.5fca83ac45794c934701c044fc18abb8.svg",
     "static/media/Gems.svg": "/static/media/Gems.720334c9b1d22d1c70ab7734a069118f.svg",
@@ -86,10 +87,10 @@
     "static/media/Ellipse 46.svg": "/static/media/Ellipse 46.f4d8aced28685514d08ba02f4cc441b7.svg",
     "static/media/green-dot.svg": "/static/media/green-dot.97d57db056c511f4f5735e199bfccff2.svg",
     "main.03967fad.css.map": "/static/css/main.03967fad.css.map",
-    "main.d169249f.js.map": "/static/js/main.d169249f.js.map"
+    "main.f5923582.js.map": "/static/js/main.f5923582.js.map"
   },
   "entrypoints": [
     "static/css/main.03967fad.css",
-    "static/js/main.d169249f.js"
+    "static/js/main.f5923582.js"
   ]
 }
