@@ -37,7 +37,7 @@ const Document = ({
       if (deleteRef.current && deleteRef.current.contains(e.target)) {
         setShow(true);
       } else if (docRef.current && docRef.current.contains(e.target)) {
-        // navigate(`/editor/${id}`);
+        navigate(`/editor/${id}`);
       }
     };
 
@@ -77,10 +77,10 @@ const Document = ({
           {(nowDate - thatDate) / 1000 > 86400 ? m.format("L") : m.fromNow()}
         </div>
         <button
-          ref={deleteRef}
+          // ref={deleteRef}
           className="absolute bottom-4 right-1"
           style={{backgroundColor:"red"}}
-          onClick={() => navigate(`/editor/${id}`)} // Added click event to navigate
+          onClick={() => { console.log("hii"); navigate(`/editor/${id}`)}} // Added click event to navigate
         >
           <Img src={deleteOutline}   />
         </button>
@@ -98,19 +98,22 @@ const Document = ({
 
 
 
-      <Grid item xs={4} sm={6} lg={2}  ref={docRef} sx={{ mr: 3,cursor:"pointer"  }}>
-        <div style={{ boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)", borderRadius: "12px", width: "140px", height: "173px" }} >
-          <Card sx={{
-            borderTopLeftRadius: "5px !important",
-            borderTopRightRadius: "5px !important",
-            borderBottomLeftRadius: "0px !important",
-            borderBottomRightRadius: "0px !important", width: "140px", height: "142px"
-          }}>
+      <Grid item xs={4} sm={6} lg={2} sx={{ mr: 3 }}>
+        <div style={{ boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)", borderRadius: "12px", width: "140px", height: "173px", }} >
+          <Card
+            ref={docRef}
+            sx={{
+              borderTopLeftRadius: "5px !important",
+              borderTopRightRadius: "5px !important",
+              borderBottomLeftRadius: "0px !important",
+              borderBottomRightRadius: "0px !important", width: "140px", height: "142px",
+              cursor: "pointer"
+            }}>
             <CardContent >
-            <Typography sx={{ fontSize: "14px", lineHeight: "13px", color: "#090909", fontWeight: 600, }}>
-          {title ? title :"-"}
-        </Typography>
-              <Typography sx={{ fontSize: "10px", lineHeight: "13px", color: "#090909", fontWeight: 400, }}> {text != null && text?.length > 0 ? text?.substr(0, 140) + "..." : ""}</Typography>
+              <Typography sx={{ fontSize: "14px", lineHeight: "13px", color: "#090909", fontWeight: 600, }}>
+                {title ? title.charAt(0).toUpperCase() + title.slice(1) : "-"}
+              </Typography>
+              <Typography sx={{ fontSize: "10px", lineHeight: "13px", color: "#090909", fontWeight: 400, mt: 1 }}> {text != null && text?.length > 0 ? text?.substr(0, 140) + "..." : ""}</Typography>
             </CardContent>
           </Card>
           <Card sx={{
@@ -122,12 +125,12 @@ const Document = ({
             <Box sx={{ display: "flex", justifyContent: "space-between" }}>
               <Typography sx={{ fontSize: "20px", color: "#3A3AF4", fontWeight: 600, textAlign: "left" }}>{index}</Typography>
               <button
-               style={{ width:"20px" , marginRight:"10px"}}
+                style={{ width: "20px", marginRight: "10px" }}
                 ref={deleteRef}
                 className=""
-                // onClick={() => navigate(`/editor/${id}`)} // Added click event to navigate
+              // onClick={() => navigate(`/editor/${id}`)} // Added click event to navigate
               >
-                <Img src={deleteOutline}/>
+                <Img src={deleteOutline} />
               </button>
               <Delete
                 id={id}
